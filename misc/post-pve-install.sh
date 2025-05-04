@@ -1,3 +1,5 @@
+
+
 #!/usr/bin/env bash
 
 # Copyright (c) 2021-2024 tteck
@@ -230,6 +232,8 @@ while true; do
   *) echo "Please answer yes or no." ;;
   esac
 done
+
+echo pveversion
 
 if ! pveversion | grep -Eq "pve-manager/8.[0-4]"; then
   msg_error "This version of Proxmox Virtual Environment is not supported"
